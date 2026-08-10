@@ -162,6 +162,10 @@
     </div>
   </footer>
 
+  <div style="text-align:center;padding:8px 0;font-size:0.95rem;background:transparent">
+    <a href="https://github.com/mugishaalex5461-max/GMI-WEBSITE/tree/gh-pages" target="_blank" rel="noopener">View source on GitHub</a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
