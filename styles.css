@@ -1,16 +1,44 @@
-/* Minimal placeholder stylesheet for GMI site */
-:root{--brand:#1a5f8e;--accent:#b44510;--bg:#ffffff}
-*{box-sizing:border-box;font-family:Inter, Sora, 'Space Grotesk', system-ui, sans-serif}
-body{margin:0;background:var(--bg);color:#111}
-.container{max-width:1100px;margin:0 auto;padding:0 18px}
-.top-strip{background:#f6f9fc;padding:8px 0;font-size:0.95rem}
-.header-grid{display:flex;align-items:center;gap:18px}
-.brand{text-decoration:none;color:inherit;display:flex;align-items:center;gap:10px}
-.brand-mark img{width:56px;height:56px;border-radius:8px}
-.page-nav{display:flex;gap:12px;padding:10px 18px;background:#fff;border-top:1px solid #eee}
-.page-nav a{color:inherit;text-decoration:none}
-.hero-banner{padding:40px 20px}
-.section{padding:28px 0}
-.footer-bottom{text-align:center;padding:18px 0;background:#f3f6f9;margin-top:24px}
-button{background:var(--brand);color:#fff;border:none;padding:10px 14px;border-radius:6px}
-@media(max-width:720px){.header-grid{flex-direction:column;align-items:flex-start}}
+/* Updated theme-like stylesheet to resemble a clean WordPress-style layout */
+:root{
+  --brand:#1a5f8e;
+  --accent:#b44510;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --container-width:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Sora, 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:#111;background:var(--bg)}
+.container{max-width:var(--container-width);margin:0 auto;padding:0 20px}
+.site-header{border-bottom:1px solid #e6eef5}
+.header-top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo{width:56px;height:56px}
+.site-title{font-weight:700;font-size:1.2rem}
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.primary-nav a{text-decoration:none;color:var(--muted);padding:8px 6px;border-radius:6px}
+.primary-nav a:hover{color:var(--brand);background:rgba(26,95,142,0.06)}
+.site-hero{background:linear-gradient(180deg,rgba(26,95,142,0.12),rgba(180,69,16,0.02)), url('log.svg');background-size:cover;padding:48px 0}
+.hero-inner{padding:48px 0}
+.hero-title{margin:0;font-size:2rem;color:var(--brand)}
+.hero-sub{color:var(--muted);margin:12px 0 18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff}
+.site-main{display:flex;gap:28px;padding:36px 0}
+.content-col{flex:2}
+.sidebar{flex:1}
+.posts-list{display:flex;flex-direction:column;gap:18px}
+.post-card{display:flex;gap:16px;background:#fff;border:1px solid #eef5fb;padding:14px;border-radius:8px;align-items:flex-start}
+.post-thumb{width:120px;height:80px;object-fit:cover;border-radius:6px}
+.post-title{margin:0 0 8px;font-size:1.25rem}
+.post-excerpt{margin:0;color:var(--muted)}
+.read-more{display:inline-block;margin-top:10px;color:var(--brand);text-decoration:none}
+.widget{background:#fff;border:1px solid #eef5fb;padding:14px;border-radius:8px;margin-bottom:16px}
+.widget-title{margin:0 0 10px;font-size:1rem}
+.footer-inner{padding:28px 0}
+.footer-widgets{display:flex;gap:24px;flex-wrap:wrap}
+.footer-widgets .widget{flex:1;min-width:180px}
+.site-info{text-align:center;color:var(--muted);margin-top:18px}
+@media (max-width:900px){
+  .site-main{flex-direction:column}
+  .primary-nav ul{display:none}
+}
