@@ -1,11 +1,12 @@
-/* Theme tuned to match the screenshot: top strip, rounded search bar, orange hero overlay, pills, and cream background */
+/* Theme tuned to match the screenshot: top strip, rounded search/header, nav pills, orange hero overlay, cream background */
 :root{
-  --top-green:#0f3b2f;       /* top strip */
+  --top-green:#0f3b2f;       /* top strip and footer top */
+  --footer-green:#0d352d;    /* gradient start */
   --brand:#1a5f8e;           /* brand blue for accents */
   --accent:#ef6a28;         /* warm orange used in hero and CTA */
   --cream:#f7f3ee;          /* page background */
   --card-bg:#ffffff;
-  --muted:#6b6f72;
+  --muted:#9aa0a3;
   --nav-pill:#394042;       /* nav dark pill background */
 }
 *{box-sizing:border-box}
@@ -52,13 +53,46 @@ body{margin:0;font-family:Sora, 'Space Grotesk', system-ui, -apple-system, 'Sego
 .card{background:var(--card-bg);padding:18px;border-radius:12px;margin-bottom:18px;box-shadow:0 8px 18px rgba(16,24,40,0.04)}
 .small-cards{display:flex;gap:12px}
 .small-cards .card{flex:1}
-/* Footer */
-.site-footer{padding:18px 0;border-top:1px solid #e9eef1;background:transparent}
-.footer-inner{display:flex;justify-content:space-between;align-items:center}
-.footer-inner a{color:var(--brand)}
-/* Responsive */
+/* Footer - precisely match screenshot overlay and color */
+.site-footer{padding:28px 0;background:transparent}
+.footer-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:22px;
+  border-radius:12px;
+  background: linear-gradient(180deg, rgba(13,53,45,1) 0%, rgba(11,47,40,1) 100%); /* deep green gradient */
+  color:#fff;
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+/* Use grid to ensure 3 equal columns like the screenshot */
+.footer-widgets{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;width:100%}
+.footer-widgets .widget{background:transparent;box-shadow:none;padding:0;border-radius:0;color:inherit}
+.footer-widgets .widget h4{color:#fff;margin:0 0 12px;font-size:1.05rem}
+.footer-widgets .widget p, .footer-widgets .widget li, .footer-widgets .widget a{color:#d3e4df;text-decoration:none}
+.footer-widgets .widget a:hover{text-decoration:underline}
+.footer-widgets .widget ul{padding:0;margin:0;list-style:none}
+.footer-widgets .widget li{margin:10px 0}
+.footer-brand{display:flex;align-items:center;gap:12px}
+.footer-brand img{width:44px;height:44px}
+.site-info{
+  width:100%;
+  text-align:center;
+  margin-top:16px;
+  color:rgba(211,228,223,0.9);
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,0.04);
+  font-size:0.95rem;
+}
+/* ensure the rounded panel sits above the page background with a subtle outer border */
+.site-footer .container{position:relative}
+.site-footer .footer-inner{border:1px solid rgba(0,0,0,0.08)}
 @media (max-width:900px){
   .site-main{flex-direction:column}
   .sidebar{width:auto}
   .main-nav ul{overflow:auto}
+  .footer-inner{flex-direction:column;align-items:stretch}
+  .site-info{text-align:left}
 }
