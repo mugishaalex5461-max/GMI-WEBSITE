@@ -7,30 +7,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <span class="brand-mark"><img src="log.svg" alt="GMI logo"></span>
-        <span class="brand-text">GMI Education</span>
-      </a>
-      <nav class="page-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="search.html">Search</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="account.html">Account</a>
-        <a href="admin_login.html">Login</a>
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="top-left">📍 Naalya, Kampala, Uganda | Open 24 Hours</div>
+      <div class="top-right">📞 +256 787790547 &nbsp; • &nbsp; <a href="https://wa.me/256787790547" target="_blank">WhatsApp (+256 787790547)</a></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="search-bar">
+        <a class="brand" href="index.html">
+          <img src="log.svg" alt="GMI" class="logo">
+          <span class="brand-text">GMI Education</span>
+        </a>
+
+        <form class="search-form">
+          <input type="search" placeholder="Search courses, materials, services...">
+          <button class="search-btn">Search</button>
+        </form>
+
+        <div class="header-actions">
+          <a class="pill" href="#">Account</a>
+          <a class="pill" href="#">Orders</a>
+          <a class="pill" href="#">Cart</a>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="admin_login.html">Login</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
+  <main class="container" style="padding:28px 0;">
+    <section class="card">
       <h1>GMI Services & Pricing</h1>
       <p>We offer online and physical learning, one-on-one tutors, and precise self-study materials. Below are our current services and pricing.</p>
 
@@ -58,41 +80,10 @@
         <li>1 Subject: <strong>200,000 UGX</strong></li>
       </ul>
 
-      <h2>3. LINK TO ONE-ON-ONE TUTORS</h2>
-      <p>Personalized tutoring sessions arranged with qualified tutors. To request a tutor or book a session, contact us on WhatsApp or by phone: <a href="tel:+256787790547">+256 787790547</a>.</p>
-
-      <h2>4. PRECISE SELF-STUDY MATERIALS</h2>
-      <h3>i) LSC - Lower Secondary</h3>
-      <p>Standard Items & Responses: <strong>2,000 UGX per login, per day</strong></p>
-
-      <h3>ii) Upper Secondary</h3>
-      <p>Standard Items & Responses: <strong>4,000 UGX per login, per day</strong></p>
-
       <hr>
       <p>If you'd like any changes to wording, pricing format, or to add a payment / booking link, tell me where to place it and I will update the page.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>GMI Education</h4>
-        <p>Providing quality education services and scholastic materials.</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+256787790547">+256 787790547</a></li>
-          <li><a href="https://wa.me/256787790547" target="_blank">WhatsApp (+256 787790547)</a></li>
-          <li><a href="mailto:gmieducationservices@gmail.com">gmieducationservices@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 GMI Education Services Ltd. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

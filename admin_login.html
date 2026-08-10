@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Login — GMI Education</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <span class="brand-mark"><img src="log.svg" alt="GMI logo" /></span>
-        <span class="brand-text">GMI Education</span>
-      </a>
-      <nav class="page-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="top-left">📍 Naalya, Kampala, Uganda | Open 24 Hours</div>
+      <div class="top-right">📞 +256 787790547 &nbsp; • &nbsp; <a href="https://wa.me/256787790547" target="_blank">WhatsApp (+256 787790547)</a></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="search-bar">
+        <a class="brand" href="index.html">
+          <img src="log.svg" alt="GMI" class="logo">
+          <span class="brand-text">GMI Education</span>
+        </a>
+
+        <form class="search-form">
+          <input type="search" placeholder="Search courses, materials, services...">
+          <button class="search-btn">Search</button>
+        </form>
+
+        <div class="header-actions">
+          <a class="pill" href="#">Account</a>
+          <a class="pill" href="#">Orders</a>
+          <a class="pill" href="#">Cart</a>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li class="active"><a href="admin_login.html">Login</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section" style="max-width:520px;margin:40px auto;">
+  <main class="container" style="padding:28px 0;">
+    <section class="widget" style="max-width:520px;margin:40px auto;">
       <h1>Admin Login</h1>
 
       <form id="adminLoginForm" action="#" method="post">
@@ -31,29 +59,17 @@
         <label for="password">Password</label>
         <input id="password" name="password" type="password" placeholder="Enter password" required />
 
-        <p style="font-size:0.95rem;color:#444">Tip: the admin email is prefilled. For security, do not store passwords in this repository.</p>
+        <p style="font-size:0.95rem;color:var(--muted)">Tip: the admin email is prefilled. For security, do not store passwords in this repository.</p>
 
-        <button type="submit">Sign in</button>
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
 
-      <div style="margin-top:18px;padding:12px;border-left:4px solid #1a5f8e;background:#f6f9fc;">
+      <div style="margin-top:18px;padding:12px;border-left:4px solid var(--brand);background:#f6f9fc;">
         <strong>Security note</strong>
         <p style="margin:8px 0 0">Do not commit real passwords. For production, store credentials on the server or behind environment variables and implement server-side authentication.</p>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>GMI Education</h4>
-        <p>Providing quality education services and scholastic materials.</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 GMI Education Services Ltd. All rights reserved.</p>
-    </div>
-  </footer>
 
 </body>
 </html>
