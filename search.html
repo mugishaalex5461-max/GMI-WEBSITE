@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GMI Education — Home</title>
+  <title>Search — GMI Education</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="site-root">
-  <!-- Top strip (location & contacts) -->
+<body>
   <div class="top-strip">
     <div class="container top-strip-inner">
       <div class="top-left">📍 Naalya, Kampala, Uganda | Open 24 Hours</div>
@@ -16,7 +15,6 @@
     </div>
   </div>
 
-  <!-- Header with search bar -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="search-bar">
@@ -25,9 +23,9 @@
           <span class="brand-text">GMI Education</span>
         </a>
 
-        <form class="search-form" id="searchForm">
-          <input type="search" id="searchInput" placeholder="Search courses, materials, services...">
-          <button type="submit" class="search-btn">Search</button>
+        <form class="search-form">
+          <input type="search" placeholder="Search courses, materials, services...">
+          <button class="search-btn">Search</button>
         </form>
 
         <div class="header-actions">
@@ -39,9 +37,9 @@
 
       <nav class="main-nav">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="search.html">Search</a></li>
+          <li class="active"><a href="search.html">Search</a></li>
           <li><a href="cart.html">Cart</a></li>
           <li><a href="checkout.html">Checkout</a></li>
           <li><a href="account.html">Account</a></li>
@@ -51,49 +49,10 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-card">
-        <div class="hero-overlay">
-          <span class="kicker">Education Excellence</span>
-          <h1 class="hero-title">GMI Education Services</h1>
-          <p class="hero-desc">Physical and online learning platforms, tutoring services, and quality scholastic materials.</p>
-          <a class="btn btn-primary" href="services.html">Explore Services</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main content: sidebar + content -->
-  <main class="site-main container">
-    <aside class="sidebar">
-      <div class="widget services-list">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#">All Services</a></li>
-          <li><a href="#">Physical Learning</a></li>
-          <li><a href="#">Online Learning</a></li>
-          <li><a href="#">Tutoring</a></li>
-          <li><a href="#">Textbooks</a></li>
-          <li><a href="#">Scientific Calculators</a></li>
-          <li><a href="#">Mathematical Tables</a></li>
-          <li><a href="#">Dissection Kits</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <section class="content">
-      <!-- Two sample sections to keep layout similar to screenshot -->
-      <div class="card small-cards">
-        <h3>Featured Services</h3>
-        <p>Quick access to our most popular services and products.</p>
-      </div>
-
-      <div class="card">
-        <h3>Why Choose GMI</h3>
-        <p>Certified tutors, flexible schedules, and personalized support for every student.</p>
-      </div>
+  <main class="container" style="padding:28px 0;">
+    <section class="card">
+      <h1>Search</h1>
+      <p>This is a placeholder search page. Implement search functionality using client-side JS or a backend search endpoint.</p>
     </section>
   </main>
 
@@ -132,6 +91,5 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
