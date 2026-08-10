@@ -16,7 +16,7 @@
 
   <header class="top-strip">
     <div class="container top-strip-inner">
-      <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="https://www.google.com/maps/search/Naalya+Kampala+Uganda" target="_blank" class="location-link" style="color: inherit; text-decoration: none;">Naalya, Kampala, Uganda</a></p>
+      <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="https://www.google.com/maps/search/Naalya+Kampala+Uganda" target="_blank" class="location-link" style="color: inherit;">Naalya, Kampala, Uganda</a></p>
       <div class="top-links">
         <a href="tel:+256787790547"><i class="fa-solid fa-phone" aria-hidden="true"></i> +256 787790547</a>
         <a href="https://wa.me/256787790547" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp (+256 787790547)</a>
@@ -129,35 +129,36 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4><span class="gmi-inline-brand"><img src="log.jpg" alt="GMI logo" class="gmi-logo-img">GMI Education</span></h4>
-        <p>Providing quality education services and scholastic materials.</p>
-        <p class="contact-info"><i class="fa-regular fa-envelope" aria-hidden="true"></i> gmieducationservices@gmail.com</p>
+    <div class="container footer-inner">
+      <div class="footer-widgets">
+        <div class="widget">
+          <h4><span class="gmi-inline-brand"><img src="log.jpg" alt="GMI logo" class="gmi-logo-img">GMI Education</span></h4>
+          <p>Providing quality education services and scholastic materials.</p>
+          <p class="contact-info"><i class="fa-regular fa-envelope" aria-hidden="true"></i> gmieducationservices@gmail.com</p>
+        </div>
+        <div class="widget">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+256787790547">+256 787790547</a></li>
+            <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/256787790547" target="_blank">WhatsApp (+256 787790547)</a></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+256782559065">M Bosco +256 782559065</a></li>
+            <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/256782559065" target="_blank">WhatsApp (M Bosco +256 782559065)</a></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="https://www.google.com/maps/search/Naalya+Kampala+Uganda" target="_blank" class="location-link" style="color: inherit;">Naalya, Kampala, Uganda</a></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i> Open 24 Hours</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="account.html">Account</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get In Touch</h4>
-        <ul>
-          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+256787790547">+256 787790547</a></li>
-          <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/256787790547" target="_blank">WhatsApp (+256 787790547)</a></li>
-          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+256782559065">M Bosco +256 782559065</a></li>
-          <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/256782559065" target="_blank">WhatsApp (M Bosco +256 782559065)</a></li>
-          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="https://www.google.com/maps/search/Naalya+Kampala+Uganda" target="_blank" class="location-link" style="color: inherit; text-decoration: none;">Naalya, Kampala</a></li>
-          <li><i class="fa-regular fa-clock" aria-hidden="true"></i> Open 24 Hours</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 GMI Education Services Ltd. All rights reserved.</p>
+
+      <div class="site-info">© 2026 GMI Education Services Ltd. All rights reserved.</div>
     </div>
   </footer>
 
